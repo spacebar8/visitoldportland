@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+Student Name: Sam Au
+File Name: tours.html
+Date: 8/20/2024
+-->
+<html lang="en">
+
+  <head>
+    <title>Downtown, Albina, Landmarks | Portland Historical Tours</title>  <!-- Browser tab title -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Enjoy the nature, architecture, and history in downtown Portland; explore the expansion of Portland from Albina; and cover all the famous landmarks in Portland.">  <!-- For SEO -->
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <!-- Use the header area for the website name or logo -->
+      <header>
+        <a href="index.html"><img src="images/logo.png" alt="Portland Historical Tours logo"></a>
+      </header>
+
+      <!-- Use the nav area to add hyperlinks to other pages within the website -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="general.html">General Info</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Use the main area to add the main content of the webpage -->
+      <main id="content">
+
+        <section id="downtown">
+          <h1>Downtown Tour</h1>
+          <img src="images/downtown-tour-small.png" alt="downtown skateboarder downhill - small">
+          <p class="mobile">Enjoy a walking tour of Portland's days gone by. This walking only tour provides a glimpse into the natural, architectural, and cultural history of downtown Portland. Upon arrival, you will receive a booklet of the 20 locations we will visit.</p>
+          <p class="tablet-desktop">Enjoy a walking tour of Portland's days gone by. This walking only tour provides a glimpse into the natural, architectural, and cultural history of downtown Portland. Upon arrival, you will receive a booklet of the 20 locations we will visit throughout this two hour tour. Use this booklet to compare Portland's current landscape with accurate historical context.</p>
+
+          <div class="tablet-desktop tour-included">
+            <p>What's Included?</p>
+            <ul>
+              <li>Complimentary tour booklet</li>
+              <li>Complimentary water</li>
+            </ul>
+          </div>
+
+          <p>Duration: 2 Hours<br>Transportation: Walking<br>Food:None<br>Price: $50</p>
+
+          <p class="tablet-desktop testimonial">"It was amazing to walk around downtown Portland comparing the images in the booklet to the current building or in some cases disappearance of a building." - Emily</p>
+        </section>
+
+        <section id="albina">
+          <h1>Albina Tour</h1>
+          <img src="images/ablina-tour-small.png" alt="albina storefront - small">
+          <p class="mobile">Want to explore Portland's history of expansion in the Albina area? This tour offers an insightful experience, by our very educated tour guides, about the history of Portland's expansion, particularly about Emanuel Hospital and Memorial Coliseum.</p>
+          <p class="tablet-desktop">Want to explore Portland's history of expansion in the Albina area? This tour offers an insightful experience, by our very educated tour guides, about the history of Portland's expansion, particularly about Emanuel Hospital and Memorial Coliseum. While this tour includes walking and driving most conversations will take place at the Urban League of Portland, a cornerstone of the African American community in Portland.</p>
+
+          <div class="tablet-desktop tour-included">
+            <p>What's Included?</p>
+            <ul>
+              <li>Complimentary tour booklet</li>
+              <li>Complimentary local snacks</li>
+            </ul>
+          </div>
+
+          <p>Duration: 3 Hours<br>Transportation: Walking/Driving<br>Food: Included<br>Price: $80</p>
+
+          <p class="tablet-desktop testimonial">"I moved to Portland a few years ago and learned so much from our tour guide on the history of the African American community in Portland." - Alex</p>
+        </section>
+
+        <section id="landmarks">
+          <h1>Landmarks Tour</h1>
+          <img src="images/landmarks-tour-small.png" alt="boat holding female statue with bridge in background - small">
+          <p class="mobile">This tour will help you cement your Portland knowledge and cover all of Portland's famous landmarks and must see spots. We use a spacious shuttle bus to travel around Portland's quadrants and famous bridges.</p>
+          <p class="tablet-desktop">This tour will help you cement your Portland knowledge and cover all of Portland's famous landmarks and must see spots. We use a spacious shuttle bus to travel around Portland's quadrants and famous bridges. When you finish the tour, you can tell everyone that you've seen it all in Portland.</p>
+
+          <div class="tablet-desktop tour-included">
+            <p>What's Included?</p>
+            <ul>
+              <li>Complimentary tour booklet</li>
+              <li>Complimentary local snacks</li>
+            </ul>
+          </div>
+
+          <p>Duration: 4 Hours<br>Transportation: Walking/Driving<br>Food: Included<br>Price: $110</p>
+
+          <p class="tablet-desktop testimonial">"We were only in town for a day and decided to make the most of it with a tour. We covered almost the entire city. I couldn't have done that alone and our tour guide was so fun!" - Beatrix</p>
+        </section>
+
+        <section id="signup">
+          <h1>Book a Reservation</h1>
+
+          <form class="signup-grid" action="https://pcc-webdev.com/cis195h/pht/formInfo.php" method="post"><!-- Start Form -->
+
+            <fieldset>
+              <legend>Customer Information</legend>
+              <label for="fName">First Name:</label>  <!-- form field -->
+              <input type="text" name="fName" id="fName" required>  <!-- required form field; name attribute for form; id attribute for scripts -->
+
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName" required>
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+
+              <label for="phone">Phone:</label>
+              <input type="tel" name="phone" id="phone">
+            </fieldset>
+
+            <fieldset>
+              <legend>Tour Information</legend>
+              <label for="tour">Choose Your Tour:</label>
+              <select name="tour" id="tour">
+                <option value="downtown">2hr - Downtown Tour</option>
+                <option value="albina">3hr - Albina Tour</option>
+                <option value="landmarks">4hr - Landmarks Tour</option>
+              </select>
+
+              <label for="date">Tour Date:</label>
+              <input type="date" name="date" id="date">
+
+              <label for="time">Select Your Time:</label>
+              <select name="time" id="time">
+                <option value="09am">09:00 AM</option>
+                <option value="10am">10:00 AM</option>
+                <option value="11am">11:00 AM</option>
+                <option value="12pm">12:00 PM</option>
+                <option value="01pm">01:00 PM</option>
+                <option value="02pm">02:00 PM</option>
+                <option value="02pm">03:00 PM</option>
+              </select>
+
+              <label for="party">Party Size?</label>
+              <select name="party" id="party">
+                <option value="1p">1 Person</option>
+                <option value="2p">2 People</option>
+                <option value="3p">3 People</option>
+                <option value="4p">4 People</option>
+                <option value="5p">5 People</option>
+                <option value="6plus">6+ (Max 12)</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Food Allergies</legend>
+              <label for="allergy">Does anyone in your party have food or drink sensitivities? If so, what are they?</label>
+              <textarea id="allergy" name="allergy" rows="5" cols="35"></textarea> <!-- rows and cols are for # of characters -->
+            </fieldset>
+
+            <input type="image" name="signup" src="images/button.jpg" alt="signup button" class="btn-signup">
+          </form>
+        </section>
+    
+      </main>
+
+      <!-- Use the footer area to add webpage footer content -->
+      <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+      </footer>
+
+      </div>
+
+  </body>
+
+</html>

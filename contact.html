@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Student Name: Sam Au
+File Name: contact.html
+Date: 8/20/2024
+-->
+<html lang="en">
+
+  <head>
+    <title>Contact Us - Location | Portland Historical Tours</title>  <!-- Browser tab title -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portland Historical Tours offers the best tours to Albina, Downtown, and landmarks. Contact us today to learn more.">  <!-- For SEO -->
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Use the header area for the website name or logo -->
+      <header>
+        <a href="index.html"><img src="images/logo.png" alt="Portland Historical Tours logo"></a>
+      </header>
+
+      <!-- Use the nav area to add hyperlinks to other pages within the website -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="general.html">General Info</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Use the main area to add the main content of the webpage -->
+      <main id="content">
+
+        <div id="questions">
+          <h2>Questions about the tours? Contact us today.</h2>
+          <p class="tel-link"><a href="tel:5035551234">(503) 555-1234</a></p>
+          <p class="tablet-desktop">(503) 555-1234</p>
+          <p>Address: <a href="https://maps.app.goo.gl/yDPZEC8bBJ1E8dMp6" target="_blank" class="link">1200 NW Naito Parkway, Portland, OR 97209</a></p>
+        </div>
+
+        <div id="contact">
+          <h2>Complete the form below and we will contact you soon.</h2>
+
+          <form class="contact-form" action="https://pcc-webdev.com/cis195h/pht/formInfo.php" method="post"><!-- Start Form -->
+            <fieldset>
+              <legend>Contact Information</legend>
+              <label for="fName">Name:</label>  <!-- form field -->
+              <input type="text" name="fName" id="fName" required>  <!-- required form field; name attribute for form; id attribute for scripts -->
+
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+
+              <label for="subject">Subject:</label>
+              <input type="text" name="subject" id="subject">
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" cols="35"></textarea> <!-- rows and cols are for # of characters -->
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn-submit">  <!-- Submit form button -->
+          </form>
+        </div>
+    
+      </main>
+
+      <!-- Use the footer area to add webpage footer content -->
+      <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+      </footer>
+
+      </div>
+
+  </body>
+
+</html>
